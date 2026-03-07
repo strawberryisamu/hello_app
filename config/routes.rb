@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root "hello#index"
+  root "application#hello"
+  get "/goodbye", to: "application#goodbye"
 end
